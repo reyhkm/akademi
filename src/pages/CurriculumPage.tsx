@@ -35,18 +35,13 @@ const CurriculumPage = () => {
               <button
                 key={level.id}
                 onClick={() => setActiveLevel(level.id)}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors relative ${
-                  activeLevel === level.id ? 'text-white' : 'text-text-dark hover:text-white'
+                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                  activeLevel === level.id
+                    ? 'bg-primary text-white'
+                    : 'text-text-dark hover:bg-gray-700 hover:text-white'
                 }`}
               >
-                {activeLevel === level.id && (
-                  <motion.div
-                    layoutId="active-curriculum-pill"
-                    className="absolute inset-0 bg-primary rounded-md"
-                    transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                  />
-                )}
-                <span className="relative z-10">{level.label}</span>
+                {level.label}
               </button>
             ))}
           </div>

@@ -8,6 +8,9 @@ import StudentLifePage from './pages/StudentLifePage';
 import RegistrationPage from './pages/RegistrationPage';
 import ContactPage from './pages/ContactPage';
 import Modal from './components/ui/Modal';
+import NewsPage from './pages/NewsPage';
+import NewsDetailPage from './pages/NewsDetailPage';
+import ProgramDetailPage from './pages/ProgramDetailPage';
 
 function App() {
   const location = useLocation();
@@ -23,6 +26,9 @@ function App() {
             <Route path="/kehidupan-siswa" element={<StudentLifePage />} />
             <Route path="/pendaftaran" element={<RegistrationPage />} />
             <Route path="/kontak" element={<ContactPage />} />
+            <Route path="/berita" element={<NewsPage />} />
+            <Route path="/berita/:slug" element={<NewsDetailPage />} />
+            <Route path="/program/:slug" element={<ProgramDetailPage />} />
           </Routes>
         </AnimatePresence>
       </main>

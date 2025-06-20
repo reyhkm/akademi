@@ -8,6 +8,7 @@ const navLinks = [
   { href: '/', label: 'Beranda' },
   { href: '/kurikulum', label: 'Kurikulum' },
   { href: '/kehidupan-siswa', label: 'Kehidupan Siswa' },
+  { href: '/berita', label: 'Berita' },
   { href: '/kontak', label: 'Kontak' },
 ];
 

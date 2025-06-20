@@ -4,34 +4,104 @@
     "slug": "kecerdasan-buatan-dan-etika",
     "title": "Kecerdasan Buatan & Etika",
     "shortDescription": "Mempelajari dasar-dasar AI, machine learning, dan implikasi etisnya di dunia modern.",
-    "imageUrl": "https://images.unsplash.com/photo-1620712943543-2858200e9456?q=80&w=800"
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-2858200e9456?q=80&w=800",
+    "fullDescription": "Program ini dirancang untuk memberikan pemahaman mendalam tentang Kecerdasan Buatan (AI) dan Machine Learning, tidak hanya dari sisi teknis tetapi juga dari perspektif etis. Siswa akan belajar bagaimana AI bekerja, bagaimana membangun model sederhana, dan yang terpenting, bagaimana menerapkan teknologi ini secara bertanggung jawab.",
+    "keyTopics": [
+      "Pengantar Machine Learning",
+      "Jaringan Saraf Tiruan (Neural Networks)",
+      "Visi Komputer (Computer Vision) Dasar",
+      "Etika dan Bias dalam AI",
+      "Studi Kasus AI di Industri"
+    ],
+    "learningOutcomes": [
+      "Mampu menjelaskan konsep-konsep inti AI dan Machine Learning.",
+      "Mampu membuat model prediksi sederhana menggunakan Python.",
+      "Mampu menganalisis potensi bias dan isu etis dalam sistem AI.",
+      "Mengembangkan portofolio proyek AI sederhana."
+    ]
   },
   {
     "id": "prog-02",
     "slug": "robotika-dan-otomasi",
     "title": "Robotika & Otomasi",
     "shortDescription": "Merancang, membangun, dan memprogram robot untuk menyelesaikan masalah dunia nyata.",
-    "imageUrl": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=800"
+    "imageUrl": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=800",
+    "fullDescription": "Siswa akan terjun langsung ke dunia robotika, mulai dari konsep dasar mekanika dan elektronika hingga pemrograman tingkat lanjut. Program ini berbasis proyek, di mana setiap siswa akan merancang, mencetak 3D, merakit, dan memprogram robot mereka sendiri untuk kompetisi internal.",
+    "keyTopics": [
+      "Dasar Elektronika dan Sirkuit",
+      "Pemrograman Mikrokontroler (Arduino/Raspberry Pi)",
+      "Desain Mekanik dan Pencetakan 3D",
+      "Sensor dan Aktuator",
+      "Algoritma Navigasi dan Kontrol"
+    ],
+    "learningOutcomes": [
+      "Mampu merakit dan memprogram robot dasar.",
+      "Memahami cara kerja berbagai jenis sensor dan aktuator.",
+      "Mampu merancang komponen robot sederhana menggunakan software CAD.",
+      "Mengembangkan keterampilan pemecahan masalah melalui proyek robotika."
+    ]
   },
   {
     "id": "prog-03",
     "slug": "seni-digital-dan-vr",
     "title": "Seni Digital & Realitas Virtual",
     "shortDescription": "Menciptakan pengalaman imersif melalui seni 3D, animasi, dan pengembangan VR.",
-    "imageUrl": "https://images.unsplash.com/photo-1634655333452-09a5a2a51f8b?q=80&w=800"
+    "imageUrl": "https://images.unsplash.com/photo-1634655333452-09a5a2a51f8b?q=80&w=800",
+    "fullDescription": "Program ini adalah persimpangan antara seni dan teknologi. Siswa akan belajar menggunakan perangkat lunak standar industri untuk menciptakan karya seni digital, model 3D, dan animasi. Puncaknya adalah pengembangan pengalaman Virtual Reality (VR) sederhana, membuka pintu ke media penceritaan masa depan.",
+    "keyTopics": [
+      "Desain Grafis dan Ilustrasi Digital",
+      "Pemodelan dan Animasi 3D (Blender)",
+      "Desain Pengalaman Pengguna (UX) untuk VR",
+      "Pengembangan VR Dasar (Unity)",
+      "Penceritaan Interaktif"
+    ],
+    "learningOutcomes": [
+      "Menguasai dasar-dasar software desain digital dan 3D.",
+      "Mampu membuat model 3D dan animasi pendek.",
+      "Memahami prinsip-prinsip desain untuk pengalaman imersif.",
+      "Menciptakan dan mempublikasikan proyek VR sederhana."
+    ]
   },
   {
     "id": "prog-04",
     "slug": "kewirausahaan-sosial",
     "title": "Kewirausahaan Sosial",
     "shortDescription": "Mengembangkan model bisnis yang berkelanjutan untuk mengatasi tantangan sosial dan lingkungan.",
-    "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800"
+    "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800",
+    "fullDescription": "Lebih dari sekadar bisnis, program ini mengajarkan siswa bagaimana menciptakan perubahan. Siswa akan belajar mengidentifikasi masalah sosial atau lingkungan di komunitas mereka, kemudian merancang model bisnis yang berkelanjutan untuk menyelesaikannya. Ini adalah tentang menciptakan dampak sambil membangun usaha.",
+    "keyTopics": [
+      "Identifikasi Masalah dan Riset Komunitas",
+      "Business Model Canvas for Social Enterprise",
+      "Pengukuran Dampak Sosial (Impact Measurement)",
+      "Pemasaran Digital dan Penggalangan Dana",
+      "Pitching dan Presentasi"
+    ],
+    "learningOutcomes": [
+      "Mampu mengidentifikasi dan menganalisis masalah sosial.",
+      "Mampu mengembangkan model bisnis untuk perusahaan sosial.",
+      "Memahami cara mengukur dan melaporkan dampak sosial.",
+      "Mengembangkan keterampilan presentasi dan komunikasi yang persuasif."
+    ]
   },
   {
     "id": "prog-05",
     "slug": "desain-produk-berkelanjutan",
     "title": "Desain Produk Berkelanjutan",
     "shortDescription": "Merancang produk fisik dan digital dengan mempertimbangkan siklus hidup dan dampak lingkungan.",
-    "imageUrl": "https://images.unsplash.com/photo-1586782848839-a1d1316393f9?q=80&w=800"
+    "imageUrl": "https://images.unsplash.com/photo-1586782848839-a1d1316393f9?q=80&w=800",
+    "fullDescription": "Program ini menantang siswa untuk berpikir secara holistik tentang desain produk. Dari mana bahan berasal? Bagaimana produk dibuat? Apa yang terjadi setelah tidak digunakan lagi? Siswa akan belajar tentang ekonomi sirkular, material ramah lingkungan, dan cara merancang produk yang indah, fungsional, dan bertanggung jawab.",
+    "keyTopics": [
+      "Prinsip Desain Berkelanjutan",
+      "Analisis Siklus Hidup Produk (Life Cycle Analysis)",
+      "Material Inovatif dan Ramah Lingkungan",
+      "Ekonomi Sirkular",
+      "Prototyping Cepat"
+    ],
+    "learningOutcomes": [
+      "Memahami prinsip-prinsip ekonomi sirkular dan desain berkelanjutan.",
+      "Mampu melakukan analisis dasar siklus hidup produk.",
+      "Mampu memilih material berdasarkan dampak lingkungannya.",
+      "Merancang dan membuat prototipe produk dengan mempertimbangkan keberlanjutan."
+    ]
   }
 ]

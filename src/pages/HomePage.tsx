@@ -7,30 +7,16 @@ import AnimatedText from '@/components/ui/AnimatedText';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import ParallaxImage from '@/components/ui/ParallaxImage';
 import { useStore } from '@/hooks/useStore';
+import PageTransition from '@/components/layout/PageTransition';
 
 import newsData from '@/data/news.json';
 import programsData from '@/data/programs.json';
 
-const pageVariants = {
-  initial: { opacity: 0 },
-  in: { opacity: 1 },
-  out: { opacity: 0 },
-};
-
-const pageTransition = {
-  type: 'tween',
-  ease: 'anticipate',
-  duration: 0.5,
-};
-
 const HomePage = () => {
   return (
-    <motion.div
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariants}
-      transition={pageTransition}
+    <PageTransition 
+      title="Beranda" 
+      description="Selamat datang di Akademi Inovasi Global, tempat para pemimpin masa depan dilahirkan melalui kurikulum berbasis teknologi dan kreativitas."
     >
       <HeroSection />
       <WhyUsSection />
@@ -38,7 +24,7 @@ const HomePage = () => {
       <VirtualTourSection />
       <LatestNewsSection />
       <CtaSection />
-    </motion.div>
+    </PageTransition>
   );
 };
 
@@ -137,15 +123,19 @@ const FeaturedProgramsSection = () => {
       <div className="flex overflow-x-auto space-x-8 pb-12 pl-4 lg:pl-12 scrollbar-hide">
         {programsData.map((program) => (
           <motion.div key={program.id} className="flex-shrink-0 w-[300px] md:w-[350px]">
-            <Card className="h-full overflow-hidden">
-              <img src={program.imageUrl} alt={program.title} className="w-full h-48 object-cover" />
-              <CardHeader>
-                <CardTitle>{program.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-text-dark">{program.shortDescription}</p>
-              </CardContent>
-            </Card>
+            <Link to={`/program/${program.slug}`} className="block h-full">
+              <Card className="h-full overflow-hidden group">
+                <div className="overflow-hidden rounded-t-xl">
+                  <img src={program.imageUrl} alt={program.title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <CardHeader>
+                  <CardTitle>{program.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-text-dark">{program.shortDescription}</p>
+                </CardContent>
+              </Card>
+            </Link>
           </motion.div>
         ))}
       </div>
@@ -216,9 +206,9 @@ const LatestNewsSection = () => (
                 <p className="text-text-dark">{news.content}</p>
               </CardContent>
               <div className="p-6 pt-0">
-                <a href="#" className="font-semibold text-secondary group-hover:text-primary transition-colors">
+                <Link to={`/berita/${news.slug}`} className="font-semibold text-secondary group-hover:text-primary transition-colors">
                   Baca Selengkapnya <ArrowRight className="inline w-4 h-4 ml-1" />
-                </a>
+                </Link>
               </div>
             </Card>
           </motion.div>

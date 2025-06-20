@@ -1,0 +1,37 @@
+[
+  {
+    "id": "prog-01",
+    "slug": "kecerdasan-buatan-dan-etika",
+    "title": "Kecerdasan Buatan & Etika",
+    "shortDescription": "Mempelajari dasar-dasar AI, machine learning, dan implikasi etisnya di dunia modern.",
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-2858200e9456?q=80&w=800"
+  },
+  {
+    "id": "prog-02",
+    "slug": "robotika-dan-otomasi",
+    "title": "Robotika & Otomasi",
+    "shortDescription": "Merancang, membangun, dan memprogram robot untuk menyelesaikan masalah dunia nyata.",
+    "imageUrl": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=800"
+  },
+  {
+    "id": "prog-03",
+    "slug": "seni-digital-dan-vr",
+    "title": "Seni Digital & Realitas Virtual",
+    "shortDescription": "Menciptakan pengalaman imersif melalui seni 3D, animasi, dan pengembangan VR.",
+    "imageUrl": "https://images.unsplash.com/photo-1634655333452-09a5a2a51f8b?q=80&w=800"
+  },
+  {
+    "id": "prog-04",
+    "slug": "kewirausahaan-sosial",
+    "title": "Kewirausahaan Sosial",
+    "shortDescription": "Mengembangkan model bisnis yang berkelanjutan untuk mengatasi tantangan sosial dan lingkungan.",
+    "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800"
+  },
+  {
+    "id": "prog-05",
+    "slug": "desain-produk-berkelanjutan",
+    "title": "Desain Produk Berkelanjutan",
+    "shortDescription": "Merancang produk fisik dan digital dengan mempertimbangkan siklus hidup dan dampak lingkungan.",
+    "imageUrl": "https://images.unsplash.com/photo-1586782848839-a1d1316393f9?q=80&w=800"
+  }
+]

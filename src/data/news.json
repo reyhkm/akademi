@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "slug": "juara-kompetisi-robotika-nasional-2024",
+    "title": "Tim Robotika AIG Raih Juara 1 di Kompetisi Robotika Nasional 2024",
+    "date": "2024-03-15",
+    "author": "Humas AIG",
+    "category": "Akademik",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1581092916346-53924b649fee?q=80&w=800",
+    "content": "Tim robotika kami, 'Inovator Muda', berhasil meraih gelar juara pertama dalam ajang bergengsi Kompetisi Robotika Nasional (KRON) 2024. Mereka mengalahkan puluhan tim dari seluruh Indonesia dengan robot pemilah sampah cerdas berbasis AI."
+  },
+  {
+    "id": 2,
+    "slug": "pameran-seni-digital-interaktif",
+    "title": "Siswa Gelar Pameran Seni Digital Interaktif 'Metamorfosis'",
+    "date": "2024-03-10",
+    "author": "Divisi Seni",
+    "category": "Seni",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800",
+    "content": "Pameran 'Metamorfosis' menampilkan karya seni digital, instalasi interaktif, dan pengalaman VR yang diciptakan oleh siswa-siswi program Seni Digital. Acara ini sukses menarik ratusan pengunjung."
+  },
+  {
+    "id": 3,
+    "slug": "program-kewirausahaan-sosial-baru",
+    "title": "AIG Luncurkan Program Kewirausahaan Sosial untuk Siswa SMA",
+    "date": "2024-03-05",
+    "author": "Kepala Sekolah",
+    "category": "Komunitas",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?q=80&w=800",
+    "content": "Program baru ini bertujuan untuk membekali siswa dengan keterampilan bisnis dan kepekaan sosial, mendorong mereka untuk menciptakan startup yang memberikan dampak positif bagi masyarakat."
+  }
+]

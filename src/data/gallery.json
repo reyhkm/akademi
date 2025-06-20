@@ -1,0 +1,11 @@
+[
+  { "id": "g1", "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800", "category": "Akademik", "title": "Hari Kelulusan" },
+  { "id": "g2", "imageUrl": "https://images.unsplash.com/photo-1581092916346-53924b649fee?q=80&w=800", "category": "Akademik", "title": "Klub Robotika" },
+  { "id": "g3", "imageUrl": "https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?q=80&w=800", "category": "Olahraga", "title": "Tim Basket" },
+  { "id": "g4", "imageUrl": "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?q=80&w=800", "category": "Komunitas", "title": "Kegiatan Sosial" },
+  { "id": "g5", "imageUrl": "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800", "category": "Seni", "title": "Pameran Seni" },
+  { "id": "g6", "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800", "category": "Akademik", "title": "Diskusi Kelas" },
+  { "id": "g7", "imageUrl": "https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?q=80&w=800", "category": "Komunitas", "title": "Seminar Teknologi" },
+  { "id": "g8", "imageUrl": "https://images.unsplash.com/photo-1596496181848-30a5a9d421a2?q=80&w=800", "category": "Olahraga", "title": "Lapangan Sepak Bola" },
+  { "id": "g9", "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800", "category": "Akademik", "title": "Ruang Belajar" }
+]

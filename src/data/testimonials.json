@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Anya Sharma",
+    "role": "Orang Tua Siswa & Peneliti AI",
+    "quote": "Akademi Inovasi Global tidak hanya mengajarkan teknologi, tetapi juga menanamkan pola pikir kritis dan etis. Anak saya berkembang pesat di sini.",
+    "avatarUrl": "https://i.pravatar.cc/150?img=1"
+  },
+  {
+    "id": 2,
+    "name": "Budi Santoso",
+    "role": "Alumni, Founder Startup Edutech",
+    "quote": "Fondasi yang saya dapatkan di AIG, terutama dalam kewirausahaan sosial, menjadi bekal utama saya dalam membangun perusahaan yang berdampak.",
+    "avatarUrl": "https://i.pravatar.cc/150?img=2"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "sd": {
+    "title": "Sekolah Dasar (SD)",
+    "description": "Di tingkat dasar, kami fokus pada penanaman rasa ingin tahu dan dasar-dasar literasi digital. Pembelajaran berbasis proyek memperkenalkan siswa pada pemecahan masalah secara kreatif sejak dini.",
+    "subjects": ["Dasar-dasar Koding Visual", "Logika Komputasional", "Sains Eksperimental", "Seni Digital Pengantar"],
+    "projects": ["Membuat Animasi Sederhana", "Merakit Robot Mainan", "Proyek Kebun Sekolah Cerdas"]
+  },
+  "smp": {
+    "title": "Sekolah Menengah Pertama (SMP)",
+    "description": "Siswa SMP mulai mendalami bidang-bidang spesifik. Kurikulum kami mengintegrasikan teknologi ke dalam mata pelajaran inti dan mendorong kolaborasi dalam proyek-proyek yang lebih kompleks.",
+    "subjects": ["Pengembangan Web Dasar", "Python untuk Analisis Data", "Desain 3D & Printing", "Etika Digital"],
+    "projects": ["Membangun Website Portofolio Pribadi", "Analisis Data Cuaca Lokal", "Mencetak Prototip Produk"]
+  },
+  "sma": {
+    "title": "Sekolah Menengah Atas (SMA)",
+    "description": "Pada tingkat SMA, siswa dipersiapkan untuk jenjang universitas dan karir masa depan. Mereka dapat memilih jalur spesialisasi dan mengerjakan proyek akhir yang komprehensif sebagai portofolio.",
+    "subjects": ["Machine Learning & AI", "Pengembangan Aplikasi Mobile", "Keamanan Siber", "Kewirausahaan Teknologi"],
+    "projects": ["Membuat Aplikasi Mobile Sederhana", "Proyek Startup Sosial", "Simulasi Penetrasi Jaringan"]
+  }
+}

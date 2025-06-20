@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/Button';
 import AnimatedText from '@/components/ui/AnimatedText';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { useStore } from '@/hooks/useStore';
 import PageTransition from '@/components/layout/PageTransition';
 
 import newsData from '@/data/news.json';
@@ -160,10 +159,10 @@ const TestimonialsSection = () => (
             transition={{ duration: 0.6, delay: index * 0.2 }}
             className={`relative mb-8 p-8 rounded-lg border border-border-color bg-gray-900/50 ${index % 2 === 0 ? 'md:mr-16' : 'md:ml-16'}`}
           >
-            <div className="absolute -top-6 ${index % 2 === 0 ? 'left-8' : 'right-8'}">
+            <div className={`absolute -top-6 ${index % 2 === 0 ? 'left-8' : 'right-8'}`}>
               <img src={testimonial.avatarUrl} alt={testimonial.name} className="w-20 h-20 rounded-full border-4 border-dark object-cover" />
             </div>
-            <p className="text-lg italic text-white mt-8">"{testimonial.quote}"</p>
+            <p className="text-lg italic text-white mt-8">\"{testimonial.quote}\"</p>
             <div className="mt-4 text-right">
               <p className="font-bold text-white text-lg">{testimonial.name}</p>
               <p className="text-sm text-primary">{testimonial.role}</p>

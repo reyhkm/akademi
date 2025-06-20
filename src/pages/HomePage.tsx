@@ -1,5 +1,4 @@
-import { useRef } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowRight, Bot, Code, Palette, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -129,16 +128,13 @@ const WhyUsSection = () => {
 };
 
 const FeaturedProgramsSection = () => {
-  const containerRef = useRef(null);
-  const { scrollXProgress } = useScroll({ container: containerRef });
-
   return (
     <section className="py-20 sm:py-32 relative">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-display font-bold text-white text-center mb-4">Kurikulum Unggulan</h2>
         <p className="text-center text-text-dark max-w-2xl mx-auto mb-12">Geser untuk melihat program-program inovatif yang kami tawarkan.</p>
       </div>
-      <div ref={containerRef} className="flex overflow-x-auto space-x-8 pb-12 pl-4 lg:pl-12 scrollbar-hide">
+      <div className="flex overflow-x-auto space-x-8 pb-12 pl-4 lg:pl-12 scrollbar-hide">
         {programsData.map((program) => (
           <motion.div key={program.id} className="flex-shrink-0 w-[300px] md:w-[350px]">
             <Card className="h-full overflow-hidden">

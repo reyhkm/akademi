@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/Button';
 import AnimatedText from '@/components/ui/AnimatedText';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import ParallaxImage from '@/components/ui/ParallaxImage';
 import { useStore } from '@/hooks/useStore';
 import PageTransition from '@/components/layout/PageTransition';
 
@@ -165,7 +164,9 @@ const VirtualTourSection = () => {
   return (
     <section className="py-20 sm:py-32">
       <div className="container mx-auto px-4 text-center">
-        <ParallaxImage src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200" alt="Campus" className="rounded-xl h-96" />
+        <div className="rounded-xl h-96 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200" alt="Campus" className="w-full h-full object-cover" />
+        </div>
         <div className="mt-[-100px] relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-white">Rasakan Pengalamannya Langsung</h2>
           <p className="mt-4 max-w-xl mx-auto text-text-dark">Jelajahi fasilitas canggih kami dari kenyamanan rumah Anda.</p>

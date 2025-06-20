@@ -12,5 +12,19 @@
     "role": "Alumni, Founder Startup Edutech",
     "quote": "Fondasi yang saya dapatkan di AIG, terutama dalam kewirausahaan sosial, menjadi bekal utama saya dalam membangun perusahaan yang berdampak.",
     "avatarUrl": "https://i.pravatar.cc/150?img=2"
+  },
+  {
+    "id": 3,
+    "name": "Citra Lestari",
+    "role": "Siswa Kelas 12, Jalur Robotika",
+    "quote": "Proyek-proyek di sini sangat menantang dan relevan dengan industri. Saya merasa jauh lebih siap untuk kuliah dan berkarir di bidang teknologi.",
+    "avatarUrl": "https://i.pravatar.cc/150?img=3"
+  },
+  {
+    "id": 4,
+    "name": "David Lee",
+    "role": "Mentor Industri, Google",
+    "quote": "Lulusan AIG memiliki kemampuan problem-solving yang luar biasa. Mereka tidak hanya menguasai teknis, tapi juga cara berpikir yang inovatif.",
+    "avatarUrl": "https://i.pravatar.cc/150?img=4"
   }
 ]

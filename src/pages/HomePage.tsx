@@ -10,6 +10,7 @@ import PageTransition from '@/components/layout/PageTransition';
 
 import newsData from '@/data/news.json';
 import programsData from '@/data/programs.json';
+import testimonialsData from '@/data/testimonials.json';
 
 const HomePage = () => {
   return (
@@ -20,7 +21,7 @@ const HomePage = () => {
       <HeroSection />
       <WhyUsSection />
       <FeaturedProgramsSection />
-      <VirtualTourSection />
+      <TestimonialsSection />
       <LatestNewsSection />
       <CtaSection />
     </PageTransition>
@@ -28,7 +29,7 @@ const HomePage = () => {
 };
 
 const HeroSection = () => (
-  <section className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+  <section className="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden">
     <div className="absolute inset-0 z-0">
       <video
         autoPlay
@@ -40,7 +41,7 @@ const HeroSection = () => (
       >
         <source src="https://cdn.coverr.co/videos/coverr-a-drone-shot-of-a-school-561/1080p.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-dark/70"></div>
+      <div className="absolute inset-0 bg-dark/80"></div>
     </div>
     <div className="relative z-10 container mx-auto px-4">
       <motion.div
@@ -48,7 +49,7 @@ const HeroSection = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight">
           <AnimatedText text="Membentuk Inovator," el="span" />
           <br />
           <AnimatedText text="Bukan Pengikut." el="span" />
@@ -61,7 +62,7 @@ const HeroSection = () => (
             <Link to="/kurikulum">Jelajahi Kurikulum</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-dark">
-            <Link to="/kontak">Tur Virtual</Link>
+            <Link to="/kontak">Hubungi Kami</Link>
           </Button>
         </div>
       </motion.div>
@@ -78,10 +79,10 @@ const WhyUsSection = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-32 bg-gray-900">
+    <section className="py-20 sm:py-32 bg-dark">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white">Mengapa Akademi Inovasi Global?</h2>
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-white">Mengapa Akademi Inovasi Global?</h2>
           <p className="mt-4 max-w-2xl mx-auto text-text-dark">Empat pilar utama yang menjadi fondasi pendidikan transformatif kami.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -93,9 +94,9 @@ const WhyUsSection = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="text-center h-full">
+              <Card className="text-center h-full hover:border-primary hover:-translate-y-2">
                 <CardHeader>
-                  <div className="mx-auto bg-dark p-4 rounded-full mb-4">
+                  <div className="mx-auto bg-gray-800 p-4 rounded-full mb-4">
                     {pillar.icon}
                   </div>
                   <CardTitle>{pillar.title}</CardTitle>
@@ -114,16 +115,16 @@ const WhyUsSection = () => {
 
 const FeaturedProgramsSection = () => {
   return (
-    <section className="py-20 sm:py-32 relative">
+    <section className="py-20 sm:py-32 relative bg-gray-900/50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-white text-center mb-4">Kurikulum Unggulan</h2>
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-white text-center mb-4">Kurikulum Unggulan</h2>
         <p className="text-center text-text-dark max-w-2xl mx-auto mb-12">Geser untuk melihat program-program inovatif yang kami tawarkan.</p>
       </div>
       <div className="flex overflow-x-auto space-x-8 pb-12 pl-4 lg:pl-12 scrollbar-hide">
         {programsData.map((program) => (
           <motion.div key={program.id} className="flex-shrink-0 w-[300px] md:w-[350px]">
             <Link to={`/program/${program.slug}`} className="block h-full">
-              <Card className="h-full overflow-hidden group">
+              <Card className="h-full overflow-hidden group hover:border-primary hover:-translate-y-2">
                 <div className="overflow-hidden rounded-t-xl">
                   <img src={program.imageUrl} alt={program.title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
                 </div>
@@ -142,60 +143,55 @@ const FeaturedProgramsSection = () => {
   );
 };
 
-const VirtualTourSection = () => {
-  const openModal = useStore((state) => state.openModal);
-
-  const handleOpenTour = () => {
-    openModal(
-      <div className="aspect-video">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/pCve1w1G-RY?autoplay=1"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
-    );
-  };
-
-  return (
-    <section className="py-20 sm:py-32">
-      <div className="container mx-auto px-4 text-center">
-        <div className="rounded-xl h-96 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200" alt="Campus" className="w-full h-full object-cover" />
-        </div>
-        <div className="mt-[-100px] relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white">Rasakan Pengalamannya Langsung</h2>
-          <p className="mt-4 max-w-xl mx-auto text-text-dark">Jelajahi fasilitas canggih kami dari kenyamanan rumah Anda.</p>
-          <Button size="lg" variant="secondary" className="mt-8" onClick={handleOpenTour}>
-            Mulai Tur Virtual 360°
-          </Button>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const LatestNewsSection = () => (
-  <section className="py-20 sm:py-32 bg-gray-900">
+const TestimonialsSection = () => (
+  <section className="py-20 sm:py-32 bg-dark">
     <div className="container mx-auto px-4">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-white">Berita & Acara Terbaru</h2>
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-white">Apa Kata Mereka?</h2>
+        <p className="mt-4 max-w-2xl mx-auto text-text-dark">Dengarkan pengalaman dari para siswa, orang tua, dan alumni kami.</p>
+      </div>
+      <div className="relative max-w-3xl mx-auto">
+        {testimonialsData.map((testimonial, index) => (
+          <motion.div
+            key={testimonial.id}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            className={`relative mb-8 p-8 rounded-lg border border-border-color bg-gray-900/50 ${index % 2 === 0 ? 'md:mr-16' : 'md:ml-16'}`}
+          >
+            <div className="absolute -top-6 ${index % 2 === 0 ? 'left-8' : 'right-8'}">
+              <img src={testimonial.avatarUrl} alt={testimonial.name} className="w-20 h-20 rounded-full border-4 border-dark object-cover" />
+            </div>
+            <p className="text-lg italic text-white mt-8">"{testimonial.quote}"</p>
+            <div className="mt-4 text-right">
+              <p className="font-bold text-white text-lg">{testimonial.name}</p>
+              <p className="text-sm text-primary">{testimonial.role}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+const LatestNewsSection = () => (
+  <section className="py-20 sm:py-32 bg-gray-900/50">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-white">Berita & Acara Terbaru</h2>
         <p className="mt-4 max-w-2xl mx-auto text-text-dark">Ikuti terus perkembangan dan pencapaian terbaru dari komunitas kami.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {newsData.map((news) => (
+        {newsData.map((news, index) => (
           <motion.div
             key={news.id}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <Card className="h-full flex flex-col group">
+            <Card className="h-full flex flex-col group hover:border-primary hover:-translate-y-2">
               <div className="overflow-hidden rounded-t-xl">
                 <img src={news.thumbnailUrl} alt={news.title} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
@@ -204,7 +200,7 @@ const LatestNewsSection = () => (
                 <CardTitle>{news.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-text-dark">{news.content}</p>
+                <p className="text-text-dark line-clamp-3">{news.content}</p>
               </CardContent>
               <div className="p-6 pt-0">
                 <Link to={`/berita/${news.slug}`} className="font-semibold text-secondary group-hover:text-primary transition-colors">
@@ -222,10 +218,10 @@ const LatestNewsSection = () => (
 const CtaSection = () => (
   <section className="py-20 sm:py-32">
     <div className="container mx-auto px-4">
-      <div className="relative rounded-xl p-12 text-center overflow-hidden bg-gradient-to-r from-primary to-secondary">
+      <div className="relative rounded-xl p-12 text-center overflow-hidden bg-primary">
         <div className="absolute inset-0 bg-dark/30 mix-blend-multiply"></div>
         <div className="relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white">Siap Bergabung dengan Para Inovator?</h2>
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-white">Siap Bergabung dengan Para Inovator?</h2>
           <p className="mt-4 max-w-2xl mx-auto text-white/90">
             Pendaftaran untuk tahun ajaran baru telah dibuka. Ambil langkah pertama menuju masa depan yang cemerlang.
           </p>

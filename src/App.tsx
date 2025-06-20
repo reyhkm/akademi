@@ -11,6 +11,7 @@ import Modal from './components/ui/Modal';
 import NewsPage from './pages/NewsPage';
 import NewsDetailPage from './pages/NewsDetailPage';
 import ProgramDetailPage from './pages/ProgramDetailPage';
+import ScrollToTopButton from './components/ui/ScrollToTopButton';
 
 function App() {
   const location = useLocation();
@@ -34,6 +35,7 @@ function App() {
       </main>
       <Footer />
       <Modal />
+      <ScrollToTopButton />
     </>
   );
 }
